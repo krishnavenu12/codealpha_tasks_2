@@ -25,19 +25,16 @@ cd handwriting-recognition
 pip install -r requirements.txt
 
 3. Download EMNIST Dataset
+## Dataset
+This project uses:
+- [EMNIST Letters](https://www.nist.gov/itl/products-and-services/emnist-dataset)  
+- MNIST (auto-downloaded via Keras)
 
-Download EMNIST Letters (in .gz format) from:
-👉 EMNIST Dataset (by NIST)
-
-Extract files into the gzip/ folder:
-
-emnist-letters-train-images-idx3-ubyte.gz
-emnist-letters-train-labels-idx1-ubyte.gz
-emnist-letters-test-images-idx3-ubyte.gz
-emnist-letters-test-labels-idx1-ubyte.gz
-
-
-(MNIST will be downloaded automatically by TensorFlow, no manual steps needed.)
+Place the `.gz` files inside a folder named `gzip/` in the project root:
+/gzip/emnist-letters-train-images-idx3-ubyte.gz
+/gzip/emnist-letters-train-labels-idx1-ubyte.gz
+/gzip/emnist-letters-test-images-idx3-ubyte.gz
+/gzip/emnist-letters-test-labels-idx1-ubyte.gz
 
 ▶️ Run the App
 python handwriting_app.py
